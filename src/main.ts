@@ -13,8 +13,10 @@ async function bootstrap() {
       forbidNonWhitelisted:true,
            // ! Excluye los campos undefined
       transformOptions: {
+        enableImplicitConversion:true,
         exposeUnsetFields: false
-      }
+      },
+      transform:true
     })
   )
 
